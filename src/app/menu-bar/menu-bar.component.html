@@ -1,0 +1,9 @@
+<nav class="nav nav-bar bg-dark navbar-expand-sm">
+<a href="#" class="brand">My Angular app</a>
+<ul class="navbar-nav">
+    <li class="nav-item" *ngFor="let link of linksData">
+        <a [routerLink]="link[0]" class="nav-link">{{link[1]}}</a>
+    </li>
+    
+</ul>
+</nav>

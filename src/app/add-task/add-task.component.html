@@ -1,0 +1,21 @@
+<section class="big-info p-4">
+    <form class="form col-sm-4" (ngSubmit)="addTask()">
+        <div class="form-group">
+            <label class="form-lable">
+                Task Id
+            </label>
+            <input type="number" name="taskId" class="form-control" [(ngModel)]="task.taskId"/>
+        </div>
+        <div class="form-group">
+            <label class="form-lable">
+                Task
+            </label>
+            <input type="text" name="task" class="form-control" 
+            [(ngModel)]="task.task" />
+        </div>
+        <div class="form-group">
+            <button class="btn" >
+            Add    </button>
+        </div>
+    </form>
+</section>

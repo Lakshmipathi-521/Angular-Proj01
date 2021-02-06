@@ -1,0 +1,25 @@
+<section class="container-fluid p-4">
+    <h3>Loan Form</h3>
+    <form (ngSubmit)="compute()" class="form col-sm-4 mx-auto">
+        <div class="col-sm-8">
+            <label class="form-control-lable">Amount: </label>
+            <input type="number" class ="form-control" name="amt" [(ngModel)]="loan.amount"/>
+        </div>
+        <div class="col-sm-8">
+            <label class="form-control-lable">Period: </label>
+            <input type="number" class ="form-control"  name="period" [(ngModel)]="loan.period" />
+        </div>
+        <div class="col-sm-8">
+            <label class="form-control-lable">Rate of Intrest: </label>
+            <input type="number" class ="form-control" min=0 max=100 name="roi" [(ngModel)]="loan.roi" />
+        </div>
+        <button>Compute Intrest</button>
+    </form>
+    <div>
+        <p class="text-center">
+            <strong>
+                You need to pay {{loan.amountPayable}} with simple intrest of {{loan.simpleIntrest}}
+            </strong>
+        </p>
+    </div>
+</section>

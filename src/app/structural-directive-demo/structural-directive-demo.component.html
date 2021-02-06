@@ -1,0 +1,26 @@
+<section class="container-fluid p-4 bg-light">
+    <h3>NgIf demo</h3>
+    <div>
+        <label class="mr-2">
+Enter a number:
+        </label>
+        <input type="number" [(ngModel)]="numVal"/>
+    </div>
+    <div>
+        <div class="card-text">
+<p *ngIf="numVal>=0">
+{{numVal}} is positive
+</p>
+<p *ngIf="numVal<0">
+    {{numVal}} is negative
+</p>
+
+<p *ngIf="numVal%2==0; else displayOdd">
+    {{numVal}} is even
+</p>
+<ng-template #displayOdd>
+{{numVal}} is odd
+</ng-template>
+        </div>
+    </div>
+</section>

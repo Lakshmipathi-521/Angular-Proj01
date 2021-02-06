@@ -1,0 +1,38 @@
+<section class="container-fluid p-4 bg-primary">
+    <p>built-in-pipes</p>
+    <h6>string pipes</h6>
+    <p>Orginal: <strong>{{strVal}}</strong></p>
+    <p>lowercase: <strong>{{strVal|lowercase}}</strong></p>
+    <p>uppercase: <strong>{{strVal|uppercase}}</strong></p>
+    <p>titlecase: <strong>{{strVal|titlecase}}</strong></p>
+
+    <h6>Number pipes</h6>
+    <p>
+    Orginal: <strong>{{numVal}}</strong> <br/>
+    Format: <strong>{{numVal|number:'1.2-5'}}</strong><br />
+    Format: <strong>{{numVal|percent}}</strong><br />
+
+    </p>
+
+    <h6>Currency pipes</h6>
+    <p>
+        Orginal: <strong>{{numVal}}</strong> <br />
+        Format: <strong>{{numVal|currency:'INR'}}</strong><br />
+        Format: <strong>{{numVal|currency:'USD'}}</strong><br />
+        Invalid: <strong>{{numVal|currency:'XYZ'}}</strong><br />
+    </p>
+
+    <h6>Date pipes</h6>
+    <p>
+        Orginal: <strong>{{dtValue}}</strong> <br />
+        Short: <strong>{{dtValue|date:'short'}}</strong> <br />
+        Long: <strong>{{dtValue|date:'long'}}</strong> <br />
+        Custom: <strong>{{dtValue|date:'dd/MM/yyyy'}}</strong> <br />
+    </p>
+    <h6>Custom pipes</h6>
+    <p>
+        1024: <strong>{{1024|inWords}}</strong> <br />
+    
+    </p>
+</section>
+

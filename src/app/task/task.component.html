@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-body">
+<strong>{{taskDetails.taskId}}</strong>
+    <em> {{taskDetails.task}}</em>
+    </div>
+    <div class="card-footer">
+    <button class="btn btn-sm btn-sm-primary" (click)="buttonClicked()">
+        {{taskDetails.isComplete?"Mark InComplete":"Mark Complete"}}
+    </button>
+    </div>
+</div>
